@@ -2,8 +2,8 @@ const { fetchInfoByColour } = require('../models/coloursModel');
 
 exports.getInfoByColour = (req, res, next) => {
   fetchInfoByColour()
-    .then(([greenItems]) => {
-      res.status(200).send(greenItems);
+    .then(([recyclableItems]) => {
+      res.status(200).send({ recyclableItems });
     })
     .catch((err) => next(err));
 };
