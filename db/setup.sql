@@ -3,3 +3,6 @@ DROP DATABASE IF EXISTS bindays;
 
 CREATE DATABASE bindays_test;
 CREATE DATABASE bindays; 
+
+
+
