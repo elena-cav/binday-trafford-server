@@ -45,3 +45,16 @@ describe('/areas', () => {
     });
   });
 });
+
+describe('/colours', () => {
+  describe('/GET', () => {
+    it('status 200, it returns an object with a key of recyclableitems', () => {
+      return request(app)
+        .get('/api/colours/green')
+        .expect(200)
+        .then(({ body }) => {
+          console.log(body);
+        });
+    });
+  });
+});

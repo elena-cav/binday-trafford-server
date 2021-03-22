@@ -12,5 +12,10 @@ module.exports = [
     colour: 'black',
     recyclableItems:
       'Please rinse your items before you put them in the bin. \n\u2022  Aerosols (no lids)'
+  },
+  {
+    colour: 'green',
+    recyclableItems:
+      'Raw and cooked meat and fish – including bones \n \u2022 Raw and cooked fruit and vegetables'
   }
 ];

@@ -3,8 +3,11 @@ const apiRouter = require('express').Router();
 
 const datesRouter = require('./datesRouter');
 const areasRouter = require('./areasRouter');
+const coloursRouter = require('./coloursRouter');
+
 apiRouter.use('/dates', datesRouter);
 
 apiRouter.use('/areas', areasRouter);
+apiRouter.use('/colours', coloursRouter);
 
 module.exports = apiRouter;
