@@ -2,9 +2,9 @@ const express = require('express');
 const app = express();
 const apiRouter = require('./routers/apiRouter.js');
 const cors = require('cors');
-const corsOptions = {
-  origin: 'http://localhost:8080'
-};
+// const corsOptions = {
+//   origin: 'http://localhost:8080'
+// };
 
 // const {
 //   handleCustomErrors,
@@ -12,7 +12,7 @@ const corsOptions = {
 //   handle500s,
 //   handle405s
 // } = require('./errors');
-app.use(cors(corsOptions));
+app.use(cors());
 
 app.use(express.json());
 app.use('/api', apiRouter);
